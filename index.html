@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <table id="calc">
+                    <tr id="tr1" colspan="3">
+                        <input type="text" id="result">
+                    </tr>
+                    <tr>
+                        <td><input type="button" onclick="displayContent('(')" value="("></td>
+                        <td><input type="button" onclick="displayContent(')')" value=")"></td>
+                        <td><input type="button" onclick="allClear()" value="AC"></td>
+                        <td><input type="button" onclick="displayContent('/')" value="/"></td>
+                    </tr>
+                    <tr>
+                        <td><input id="sev" type="button" onclick="displayContent('7')" value="7"></td>
+                        <td><input id="eight" type="button" onclick="displayContent('8')" value="8"></td>
+                        <td><input id="nine" type="button" onclick="displayContent('9')" value="9"></td>
+                        <td><input id="mul" type="button" onclick="displayContent('*')" value="x"></td>
+                    </tr>
+                     <tr>
+                        <td><input id="four" type="button" onclick="displayContent('4')" value="4"></td>
+                        <td><input id="five" type="button" onclick="displayContent('5')" value="5"></td>
+                        <td><input id="six" type="button" onclick="displayContent('6')" value="6"></td>
+                        <td><input id="sub" type="button" onclick="displayContent('-')" value="-"></td>
+                    </tr>
+                    <tr>
+                        <td><input id="one" type="button" onclick="displayContent('1')" value="1"></td>
+                        <td><input id="two" type="button" onclick="displayContent('2')" value="2"></td>
+                        <td><input id="three" type="button" onclick="displayContent('3')" value="3"></td>
+                        <td><input id="add" type="button" onclick="displayContent('+')" value="+"></td>
+                    </tr>
+                    <tr>
+                        <td><input id="zero" type="button" onclick="displayContent('0')" value="0"></td>
+                        <td><input id="dot" type="button" onclick="displayContent('.')" value="."></td>
+                        <td><input id="exp" type="button" onclick="deletelast()" value="x"></td>
+                        <td><input id="equal" type ="button" onclick="evalExpression()" value="="></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-4"></div>
+        </div>
+
+    </div>
+</body>
+<script src="./calc.js"></script>
+</html>
